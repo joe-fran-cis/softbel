@@ -26,6 +26,13 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
+  <!-- Include SweetAlert2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+  <!-- Include SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -152,25 +159,20 @@
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident</h3>
+            <h3>About Company</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua.
+              Softbel Tech is a private limited company (OPC) incorporated on 18th July 2020 under the Companies Act,
+              2013 (18 of 2013). The company is limited by shares.
             </p>
             <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-              </li>
-              <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
-                  velit.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
-                  pariatur.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Corporate Identity Number (CIN) of the company is
+                  U72900KL2020OPC062988.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>TAN of the company is CHNS12845A.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>PAN of the company is ABDCS9875L.</span></li>
             </ul>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              Softbel Tech aims to provide innovative technology solutions, delivering high-quality services while
+              upholding a strong commitment to customer satisfaction.
             </p>
           </div>
         </div>
@@ -178,6 +180,7 @@
       </div>
 
     </section>
+
     <!-- /About Section -->
 
     <!-- Clients Section -->
@@ -421,8 +424,8 @@
                 <p>Efficient management of billing and invoicing for jewellery stores.</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="Jewellery Billing System"
                   data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a> -->
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -435,8 +438,8 @@
                 <p>Streamlining inventory tracking and management for businesses.</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="Inventory Management System"
                   data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a> -->
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -449,8 +452,8 @@
                 <p>Advanced software to manage drone operations for irrigation systems.</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="Drone Software for Irrigation"
                   data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a> -->
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -485,38 +488,35 @@
             <div class="team-member">
               <div class="member-img">
                 <img src="assets/img/people/jos.png" class="img-fluid" alt="">
-                <div class="social">
+                <!-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
               <div class="member-info">
                 <h4>Jos Babu</h4>
-                <span>Founder Director & Chief Information Officer</span>
+                <span>Founder Director & Chief Information Officer</span>
+                <!-- Short description -->
+                <p>
+                  IT professional with 25 years of experience in heading Information technology, Shared services, Info
+                  Sec, IT infra with UAE Exchange & Financial services Ltd, India and UNIMONI, India as CIO, CTO &
+                  Senior Vice President.
+                </p>
+                <p id="more-text-1" style="display:none;">
+                  A certified Scrum master who has Managed large-scale global projects and 100+ IT professionals with
+                  in-house and outsourced resources. Developed & Managed ERP solutions like Foreign Exchange
+                  management system, Online Air ticketing & holidays, Gold Loan, Prepaid Wallet- UPI, FA, HRMS, CRMS
+                  with online KYC customer onboarding, and Inventory management.
+                </p>
+                <a href="javascript:void(0);" id="see-more-1" onclick="toggleText(1)">See More</a>
+                </p>
               </div>
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/people/anand.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Anand Paul</h4>
-                <span>Chief Marketing Officer
-                  Malta, Europe</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
+
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
@@ -533,7 +533,57 @@
                 <h4>Aneesh Gopinathan</h4>
                 <span>Chief Technology Officer
                   Melbourne, Australia</span>
+                <!-- Short description -->
+                <p>
+                  IT Technical project /program professional with 20+ years of experience in delivering successful hard
+                  ware and software projects in energy, health , telecommunication and cyber security sector.
+                </p>
+                <p id="more-text-3" style="display:none;">
+                  Past experience includes digital transformation projects in energy grid and automation, leveraging
+                  smart software solution and system integration in Siemens.
+                  Development head of molecular spectral imaging CT scanners , and worked as country head for cyber
+                  security and SaaS products.
+                </p>
+                <a href="javascript:void(0);" id="see-more-3" onclick="toggleText(3)">See More</a>
+                </p>
               </div>
+
+
+
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/people/anand.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Anand Paul</h4>
+                <span>Chief Marketing Officer
+                  Malta, Europe</span>
+                <!-- Short description -->
+                <p>
+                  20+ years of experience in hotel management projects, specialised in food and beverages, marketing and
+                  sales.
+                </p>
+                <p id="more-text-2" style="display:none;">
+                  Extensively global exposure in large corporate group across various domains as Captain and F & B head
+                  in hotel management and sales head in BFSI. Experience in handling large global customers and their
+                  relations to improve operations efficiency , sales and profit for the organisation.
+                </p>
+                <a href="javascript:void(0);" id="see-more-2" onclick="toggleText(2)">See More</a>
+                </p>
+              </div>
+
+
+
             </div>
           </div><!-- End Team Member -->
 
@@ -610,23 +660,22 @@
           </div>
 
           <div class="col-lg-8">
-            <form method="" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200"
+              onsubmit="return false;">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required="">
                 </div>
 
-                <div class="col-md-6 ">
-                  <input type="text" class="form-control" name="mobile_no" placeholder="Your Mobile No." required="">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="mobile_no" id="mobile_no" placeholder="Your Mobile No."
+                    required="">
                 </div>
-
-                <!-- <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div> -->
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" id="message" rows="6" placeholder="Message"
+                    required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -634,7 +683,8 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button class="button1">Send</button>
+                  <!-- Changed the button type to button to prevent form submission -->
+                  <button type="button" class="button1" id="send-button">Send</button>
                 </div>
 
               </div>
@@ -694,7 +744,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-12 footer-newsletter">
+          <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             <form action="forms/newsletter.php" method="post" class="php-email-form">
@@ -704,25 +754,22 @@
               <div class="error-message"></div>
               <div class="sent-message">Your subscription request has been sent. Thank you!</div>
             </form>
-          </div>
+          </div> -->
 
         </div>
       </div>
     </div>
 
-    <div class="copyright">
+    <!-- <div class="copyright">
       <div class="container text-center">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">GP</strong> <span>All Rights Reserved</span></p>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
             href="https://themewagon.com">ThemeWagon</a>
         </div>
       </div>
-    </div>
+    </div> -->
 
   </footer>
 
@@ -745,6 +792,51 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.getElementById('send-button').addEventListener('click', function () {
+      // Get form field values
+      var name = document.getElementById('name').value.trim();
+      var mobile_no = document.getElementById('mobile_no').value.trim();
+      var message = document.getElementById('message').value.trim();
+
+      // Check if all required fields are filled
+      if (name === "" || mobile_no === "" || message === "") {
+        // Show error if any field is empty
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Please fill all the fields before sending the message.',
+          confirmButtonText: 'OK'
+        });
+      } else {
+        // Show SweetAlert success message if all fields are filled
+        Swal.fire({
+          icon: 'success',
+          title: 'Thank you for contacting us!',
+          text: 'We will get back to you soon.',
+          confirmButtonText: 'OK'
+        });
+
+        // Optionally reset the form after showing the message
+        document.getElementById('contact-form').reset();
+      }
+    });
+
+    function toggleText(id) {
+      var moreText = document.getElementById('more-text-' + id);
+      var seeMoreLink = document.getElementById('see-more-' + id);
+
+      if (moreText.style.display === 'none') {
+        moreText.style.display = 'inline';  // Show the rest of the text
+        seeMoreLink.textContent = 'See Less'; // Change link text to "See Less"
+      } else {
+        moreText.style.display = 'none'; // Hide the rest of the text
+        seeMoreLink.textContent = 'See More'; // Change link text back to "See More"
+      }
+    }
+
+  </script>
 
 </body>
 

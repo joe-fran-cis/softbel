@@ -1737,3 +1737,9 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+section#about,
+section#portfolio,
+section#contact {
+  background-color: #a0c0dd;
+}
