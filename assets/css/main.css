@@ -166,12 +166,19 @@ h6 {
 }
 
 .header .logo {
-  line-height: 1;
+  /*line-height: 1;*/
 }
 
-.header .logo img {
+/*.header .logo img {
   max-height: 36px;
   margin-right: 8px;
+}*/
+
+.header .logo img {
+  width: 70%;
+  /* Adjusts the image to the full width of its container */
+  height: auto;
+  /* Maintains the image aspect ratio */
 }
 
 .header .logo h1 {
@@ -226,13 +233,13 @@ h6 {
 /* Index Page Header
 ------------------------------*/
 .index-page .header {
-  --background-color: rgba(0, 0, 0, 0);
+  --background-color: white;
 }
 
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: rgba(0, 0, 0, 0.8);
+  --background-color: white;
 }
 
 /*--------------------------------------------------------------
@@ -258,7 +265,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: black;
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
@@ -285,7 +292,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: red;
   }
 
   .navmenu .dropdown ul {
