@@ -1772,7 +1772,7 @@ section#contact {
 }
 
 .custom-heading {
-  font-size: 2.5vh;
+  font-size: 18px;
   /* Font size based on viewport width */
   font-weight: bold;
   color: black;
@@ -1806,7 +1806,7 @@ a:hover .custom-heading {
 .service_content {
   display: none;
   /* Hidden by default */
-  font-size: 2.5vh;
+  font-size: 15px;
   /* Adjust the content font size */
   margin-top: 20px;
   line-height: 1.6;
