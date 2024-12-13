@@ -1027,12 +1027,26 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+/* .services .service-item {
+  background-color: var(--surface-color);
+  text-align: center;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding: 25px 0px;
+  min-height: 200px;
+  /* Set a minimum height for the service item */
+/* transition: all ease-in-out 0.3s;
+} */
+
 .services .service-item {
   background-color: var(--surface-color);
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  padding: 80px 20px;
-  height: 100%;
+  padding: 25px 0px;
+  min-height: 210px;
+  width: 100%;
+  /* Makes it take full width available */
+  max-width: 350px;
+  /* Limits width to 300px */
   transition: all ease-in-out 0.3s;
 }
 
@@ -1187,21 +1201,23 @@ section,
 }
 
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
+  opacity: 1;
+  /* Always visible */
   position: absolute;
   left: 12px;
   right: 12px;
-  bottom: -100%;
+  bottom: 0;
+  /* Position it at the bottom */
   z-index: 3;
-  transition: all ease-in-out 0.5s;
   background: color-mix(in srgb, var(--background-color), transparent 10%);
   padding: 15px;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 {
+.portfolio .portfolio-item .portfolio-info h5 {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
+  height: 41px;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
@@ -1232,9 +1248,12 @@ section,
   font-size: 28px;
 }
 
+/* Remove hover effect */
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
+  /* Keep opacity at 1 */
   bottom: 0;
+  /* Keep at the bottom */
 }
 
 /*--------------------------------------------------------------
@@ -1750,4 +1769,76 @@ section#about,
 section#portfolio,
 section#contact {
   background-color: #a0c0dd;
+}
+
+.custom-heading {
+  font-size: 1.15vw;
+  /* Font size based on viewport width */
+  font-weight: bold;
+  color: black;
+  /* Base color is black */
+  cursor: pointer;
+  /* Makes it appear clickable */
+  margin-bottom: 10px;
+  /* Space between heading and content */
+  display: inline-block;
+  /* Ensure it behaves like a text block */
+  transition: all 0.3s ease;
+  /* Smooth transition for underline and color */
+}
+
+.custom-heading:hover {
+  text-decoration: underline;
+  /* Underline the text on hover */
+  color: #007bff;
+  /* Optional: Change text color on hover for feedback */
+}
+
+a:hover .custom-heading {
+  text-decoration: underline !important;
+  /* Force underline */
+  color: color-mix(in srgb, var(--accent-color), transparent 25%) !important;
+  /* Adjusted color mix */
+}
+
+
+/* Content section that is hidden by default */
+.service_content {
+  display: none;
+  /* Hidden by default */
+  font-size: 0.9vw;
+  /* Adjust the content font size */
+  margin-top: 20px;
+  line-height: 1.6;
+  position: relative;
+  /* Ensure content stays in its normal flow */
+  max-height: 0;
+  /* Initially no height */
+  overflow: hidden;
+  /* Hide overflow content */
+  transition: max-height 0.5s ease-out;
+  /* Smooth transition */
+  text-align: justify;
+}
+
+/* Add 'show' class when content should be visible */
+.service_content.show {
+  display: block;
+  /* Make content visible */
+  max-height: 1000px;
+  /* Allow for a reasonable height, adjust as needed */
+  padding: 6px 16px;
+  /* Add padding to create space around content */
+}
+
+@keyframes slideDown {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+
+  100% {
+    height: auto;
+    opacity: 1;
+  }
 }
