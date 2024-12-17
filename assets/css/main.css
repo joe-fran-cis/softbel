@@ -11,6 +11,10 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+* {
+  font-family: 'Arial', sans-serif !important;
+}
+
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway", sans-serif;
@@ -1841,4 +1845,41 @@ a:hover .custom-heading {
     height: auto;
     opacity: 1;
   }
+}
+
+.about .content {
+  text-align: justify;
+}
+
+/* Apply alternating colors to h3 elements inside the about section */
+#about h3:nth-of-type(odd) {
+  color: #005EA4;
+  /* Color for odd h3 (red-orange) */
+}
+
+#about h3:nth-of-type(even) {
+  color: #D4172C;
+  /* Color for even h3 (light blue) */
+}
+
+/* Center the list itself */
+#about ul {
+  list-style-type: none;
+  /* Remove default bullets */
+  padding: 0;
+  /* Remove default padding */
+  margin: 0 auto;
+  /* Center the entire list horizontally */
+  display: block;
+  /* Block display for default behavior */
+  width: fit-content;
+  /* Ensure the width of the ul fits its content */
+}
+
+/* Style the list items */
+#about ul li {
+  text-align: left;
+  /* Left-align text inside each li */
+  margin: 10px 0;
+  /* Add some vertical space between each list item */
 }
